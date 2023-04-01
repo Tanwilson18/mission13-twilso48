@@ -1,12 +1,21 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from './Home';
 import './App.css';
-import TopBanner from './blah';
-
+import Layout from './Layout';
+import Home from './Home';
+import MovieList from './Movies';
+import Podcasts from './Podcasts';
 function App() {
   return (
-    <div className="App">
-      <TopBanner saying="Joe Hilton's Movie site" />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="podcasts" element={<Podcasts />} />
+          <Route path="movies" element={<MovieList />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
