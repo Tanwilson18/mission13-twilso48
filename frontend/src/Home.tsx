@@ -1,37 +1,28 @@
+import React from 'react';
 import styles from './blah.module.css';
 
-//homepage
-function Home() {
+//This function displays Joel picture as well as the description of his site
+function TopBanner(props: any) {
   return (
     <>
       <div className="row">
-        <div className="row">
-          <div className="col-4">
-            <div className={styles['change-me']}>
-              <img
-                src={process.env.PUBLIC_URL + '/JoelHiltonHeadshot (1).jpg'}
-                alt="Joel Hilton"
-              />
-            </div>
-          </div>
-          <div className="col align-self-center text-start">
-            <h1 className={styles.h1}>Joel's Movie Website</h1>
-            <h4>(aka Mission 13)</h4>
+        <div className="col-1">
+          <img src="./jh.jpeg" alt="Joel Hilton" className={styles.logo} />
+        </div>
+        <div className="col align-self-center text-start">
+          <h1 className={styles.h1}>{props.title}</h1>
+        </div>
+        <div>
+          <p className={styles.p}>
+            This site stores Joel Hilton's Movies Collection including only his
+            favorites movies of all times!
             <br />
-            <br />
-            <div className={styles['move']}>
-              <p>
-                This website is the home of Joel Hilton's movie collection
-                database, which contains hundreds of movies curated by the Joel
-                Hilton himself. There's also a link to a podcast called
-                Baconsale.
-              </p>
-            </div>
-          </div>
+            Check this out in case you are wondering what movies to watch
+            next...
+          </p>
         </div>
       </div>
     </>
   );
 }
-
-export default Home;
+export default TopBanner;

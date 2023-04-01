@@ -1,27 +1,21 @@
+import React from 'react';
 import styles from './blah.module.css';
-//podcasts
-function Podcasts() {
+
+//Podcast funtion that displays a title and redirects to joel;s podcats link
+function JoelPodcast() {
   return (
     <>
-      <div className="row">
-        <div className="row">
-          <div className="col-2"></div>
-          <div className="col align-self-center text-start">
-            <h1 className={styles.h1}>Podcasts</h1>
-            <h4 className={styles.h4}>(just one podcast actually)</h4>
-            <br />
-            <br />
-            <div className={styles['move']}>
-              <p>This podcast is called Baconsale. Give it a listen:</p>
-              <a href="https://baconsale.com/">Listen here</a>
-              <br />
-              <br />
-            </div>
-          </div>
-        </div>
+      <div className="col align-self-center text-start">
+        <h2 className={styles.h1}>Welcome to Podcast page</h2>
+        <p className={styles.p}>
+          To listen to my most recent podcast click here:{' '}
+          <a href="https://baconsale.com/" target="_blank">
+            My Podcast!
+          </a>
+        </p>
       </div>
     </>
   );
 }
 
-export default Podcasts;
+export default JoelPodcast;

@@ -1,22 +1,25 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import logo from './logo.svg';
 import './App.css';
-import Layout from './Layout';
-import Home from './Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TopBanner from './Home';
 import MovieList from './Movies';
-import Podcasts from './Podcasts';
+import JoelPodcast from './Podcasts';
+import Navbar from './Navbar';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="podcasts" element={<Podcasts />} />
-          <Route path="movies" element={<MovieList />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    //Wrapped my div with the router tag so the routes within pages work
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<TopBanner title="Joel Hilton Website" />} />
+          <Route path="/Podcast" element={<JoelPodcast />} />
+          <Route path="/MovieList" element={<MovieList />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

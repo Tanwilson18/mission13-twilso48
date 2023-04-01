@@ -1,26 +1,28 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './blah.module.css';
 
-//navbar that appears on all pages
-
+//This is my navigation var function that is applied to each page and contains the route to other pages
 function Navbar() {
   return (
-    <div className={styles['topnav']}>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/movies">Movie Collection</Link>
-          </li>
-          <li>
-            <Link to="/podcasts">Podcasts</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav className={styles.navbar}>
+      <ul className={styles.navbarList}>
+        <li className={styles.navbarItem}>
+          <Link to="/" className={styles.navbarLink}>
+            HomePage
+          </Link>
+        </li>
+        <li className={styles.navbarItem}>
+          <Link to="/Podcast" className={styles.navbarLink}>
+            Podcast
+          </Link>
+        </li>
+        <li className={styles.navbarItem}>
+          <Link to="/MovieList" className={styles.navbarLink}>
+            MovieList
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
