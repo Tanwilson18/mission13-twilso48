@@ -1,10 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from './Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Layout from './Layout';
 import Home from './Home';
 import MovieList from './Movies';
 import Podcasts from './Podcasts';
+
 function App() {
   return (
     <BrowserRouter>
