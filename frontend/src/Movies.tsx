@@ -12,12 +12,11 @@ function MovieList() {
       ...mds,
       //Adding one of my favorite movies to the collection by using the add movie button created below
       {
-        Category: 'Drama',
-        Title: 'Love Rosie',
+        Category: 'Action/Adventure',
+        Title: 'Avengers, The',
         Year: 2012,
-        Director: 'Joel Higgins',
+        Director: 'Joss Whedon',
         Rating: 'PG-13',
-        Edited: 'No',
       },
     ]);
   };

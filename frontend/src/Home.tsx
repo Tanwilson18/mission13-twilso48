@@ -7,7 +7,11 @@ function TopBanner(props: any) {
     <>
       <div className="row">
         <div className="col-1">
-          <img src="./jh.jpeg" alt="Joel Hilton" className={styles.logo} />
+          <img
+            src="./JoelHiltonHeadshot.jpg"
+            alt="Joel Hilton"
+            className={styles.logo}
+          />
         </div>
         <div className="col align-self-center text-start">
           <h1 className={styles.h1}>{props.title}</h1>
