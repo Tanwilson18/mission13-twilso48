@@ -18,11 +18,9 @@ function TopBanner(props: any) {
         </div>
         <div>
           <p className={styles.p}>
-            This site stores Joel Hilton's Movies Collection including only his
-            favorites movies of all times!
+            Welcome to The Ultimate Movie Collection Provided by Joel Hilton
             <br />
-            Check this out in case you are wondering what movies to watch
-            next...
+            Here is a list of movie recommendations!
           </p>
         </div>
       </div>
