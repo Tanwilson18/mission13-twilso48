@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './blah.module.css';
 
-//This function displays Joel picture as well as the description of his site
+//This function displays Joel pic
 function TopBanner(props: any) {
   return (
     <>
@@ -13,9 +13,9 @@ function TopBanner(props: any) {
             className={styles.logo}
           />
         </div>
-        <div className="col align-self-center text-start">
+        {/* <div className="col align-self-center text-start">
           <h1 className={styles.h1}>{props.title}</h1>
-        </div>
+        </div> */}
         <div>
           <p className={styles.p}>
             Welcome to The Ultimate Movie Collection Provided by Joel Hilton

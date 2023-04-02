@@ -6,9 +6,9 @@ function JoelPodcast() {
   return (
     <>
       <div className="col align-self-center text-start">
-        <h2 className={styles.h1}>Welcome to Podcast page</h2>
+        <h2 className={styles.h1}>Podcast Page!</h2>
         <p className={styles.p}>
-          To listen to my most recent podcast click here:{' '}
+          Listen to my most recent podcast:{' '}
           <a href="https://baconsale.com/" target="_blank">
             My Podcast!
           </a>
