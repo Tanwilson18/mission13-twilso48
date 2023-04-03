@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import TopBanner from './Home';
+import Header from './Header';
 import MovieList from './Movies';
 import JoelPodcast from './Podcasts';
 import Navbar from './Navbar';
@@ -13,7 +13,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<TopBanner title="Joel Hilton Website" />} />
+          <Route path="/" element={<Header title="Joel Hilton Website" />} />
           <Route path="/Podcast" element={<JoelPodcast />} />
           <Route path="/MovieList" element={<MovieList />} />
         </Routes>
