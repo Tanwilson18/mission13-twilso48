@@ -13,15 +13,11 @@ function TopBanner(props: any) {
             className={styles.logo}
           />
         </div>
-        {/* <div className="col align-self-center text-start">
-          <h1 className={styles.h1}>{props.title}</h1>
-        </div> */}
         <div>
-          <p className={styles.p}>
-            Welcome to The Ultimate Movie Collection Provided by Joel Hilton
-            <br />
-            Here is a list of movie recommendations!
-          </p>
+          <h5 className={styles.p}>
+            Welcome to The Ultimate Movie Collection Site Provided by Joel
+            Hilton
+          </h5>
         </div>
       </div>
     </>

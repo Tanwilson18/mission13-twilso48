@@ -4,13 +4,13 @@ import styles from './blah.module.css';
 
 const mds = data.MovieData;
 
-//My movie list funtion that extract data from my MovieData.json file and put it into a table
+// list of movies
 function MovieList() {
   const [listOfMovies, setListOfMovies] = useState(mds);
   const addMovie = () => {
     setListOfMovies([
       ...mds,
-      //Adding one of my favorite movies to the collection by using the add movie button created below
+      // add a movie to the list using the button
       {
         Category: 'Action/Adventure',
         Title: 'Avengers, The',
@@ -20,7 +20,7 @@ function MovieList() {
       },
     ]);
   };
-  //Creating the collection table, for the tbody I created an index that would create a unique key for each movie and allow me to add my new movie just once
+
   return (
     <>
       <div>

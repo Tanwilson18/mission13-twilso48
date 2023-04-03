@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './blah.module.css';
 
-//This is my navigation var function that is applied to each page and contains the route to other pages
+// navbar
 function Navbar() {
   return (
     <nav className={styles.navbar}>

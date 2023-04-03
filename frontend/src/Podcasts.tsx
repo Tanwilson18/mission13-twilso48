@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './blah.module.css';
 
-//Podcast funtion that displays a title and redirects to joel;s podcats link
+//podcast page
 function JoelPodcast() {
   return (
     <>
